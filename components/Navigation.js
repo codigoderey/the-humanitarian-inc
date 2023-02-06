@@ -21,20 +21,22 @@ const Navigation = () => {
 				<div className="container">
 					<div className="header-row justify-content-lg-between">
 						<div id="logo" className="me-lg-5">
-							<Link
-								href="/"
-								className="standard-logo"
-								data-dark-logo="/assets/logo.png">
-								<Image
-									src="/assets/logo.png"
-									width={60}
-									height={60}
-									alt="the humanitarian logo"
-								/>
-							</Link>
 							<Link href="/">
-								<a className="retina-logo" data-dark-logo="/assets/logo@2x.png">
+								<a
+									style={{
+										display: "flex",
+										alignItems: "center"
+									}}
+									className="retina-logo"
+									data-dark-logo="/assets/logo@2x.png">
 									<img src="/assets/logo@2x.png" alt="the humanitarian logo" />
+									<span
+										className="d-none d-md-inline-block ms-1 fw-bold"
+										style={{
+											fontSize: "1.5rem"
+										}}>
+										The Humanitarian Inc.
+									</span>
 								</a>
 							</Link>
 						</div>
